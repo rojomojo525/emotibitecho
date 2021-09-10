@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" activate="activate" configuration-policy="optional" deactivate="deactivate" enabled="true" name="net.medimuse.emotibitconnector.service.EmotibitEchoService">
+   <service>
+      <provide interface="net.medimuse.emotibitconnector.service.IEmotibitEchoService"/>
+      <provide interface="net.medimuse.emotibitconnector.EmotibitEcho$StateMachine"/>
+      <provide interface="net.medimuse.emotibitconnector.EmotibitEchoListener"/>
+   </service>
+   <reference cardinality="1..1" field="eventAdmin" interface="org.osgi.service.event.EventAdmin" name="eventAdmin"/>
+   <implementation class="net.medimuse.emotibitconnector.service.EmotibitEchoService"/>ector.service.EmotibitEchoService&quot;&gt;
+</scr:component>
